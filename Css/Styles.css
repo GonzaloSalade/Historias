@@ -120,7 +120,7 @@ h2{
 /* -------------------------------FOOTER------------------------------------------------------- */
 footer{
     height: 90px;
-    background-color: #121C4A;
+    background-image: linear-gradient(to left, black, #121C4A);
     color:#AEB8E3;
     padding: 7px;
 }
@@ -245,6 +245,9 @@ section div div form p{
 .foto{
     width: 100%;
     height: 100%;
+}
+.foto:hover{
+    transform: scale(1.5 , 1.5);
 }
 
 #newYork{
