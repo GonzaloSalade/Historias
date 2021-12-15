@@ -16,15 +16,24 @@ header{
     background-color: #121C4A;
     display: flex;
 }
-nav ul{
-list-style-type: none;
-}
-.nav li a {
-    color: white;
-    text-decoration: none; 
-}
 footer{
     background-color: #121C4A;
+}
+#logoHistorias{
+    width: 100px;
+    height: 100px;
+}
+#navBar{
+    background-color:#121C4A;
+    margin-bottom: 0;
+}
+.bg-light{
+    --bs-bg-opacity: 0;
+}
+a:-webkit-any-link {
+    color: #AEB8E3;
+    cursor: pointer;
+    text-decoration: none;
 }
 /*                                    Main                                 */
 .textoEnFoto{
@@ -129,6 +138,10 @@ footer a{
     text-decoration: none;
 }
 /* ----------------------------------////CONTACTO/////---------------------------------- */
+.titulos{
+    font-size: 90px;
+    
+}
 #padreFormFoto{
     padding-top: 35px;
     padding-bottom: 35px;
@@ -200,11 +213,13 @@ section div div form p{
 .parrafoEntrevistaBlog{
     padding-left: 35px ;
     width: 90%;
+    color: black;
 }
 .tituloEntrevistaBlog{
     padding-left: 35px;
     width: 90%;
     margin-top: 50px;
+    color: black;
 }
 .fechaDeNota{
 
@@ -241,6 +256,7 @@ section div div form p{
     column-gap: 20px;
     row-gap: 40px;
     justify-content: center;
+    margin-bottom: 20px;
 }
 .foto{
     width: 100%;
@@ -352,7 +368,7 @@ section div div form p{
 @media only screen and (max-width:600px){
 
     #grillaGral{
-        grid-template-rows: 1,86fr 25,3fr 1fr ;
+        grid-template-rows: 1,86fr 25,3fr 1fr;
 }
     header{
         flex-direction: column;
@@ -374,6 +390,9 @@ section div div form p{
         text-align: center;
         align-items: center;
         }
+    #tituloBlog{
+        margin-bottom: 200px;
+    }
         /* -------------------------------MAIN------------------------------------------ */
     h2{
         margin-top: 100px;
@@ -404,8 +423,11 @@ section div div form p{
         text-align: center;
     }
     .podcast{
-        padding-bottom: 50px;
-}
+        padding-bottom: 140px;
+    }
+    h3{
+        margin-bottom: 20px;
+    }
 /* -------------------------SECCION TRABAJOS------------------------------------ */
     #divTrabajosMobile{
         display: flex;
@@ -485,7 +507,7 @@ section div div form p{
 @media only screen and (min-width:601px){
 
     #grillaGral{
-        grid-template-rows: 1,3fr 24fr 1fr ;
+        grid-template-rows: 1,3fr 24fr 1fr;
         
     }
     header{
@@ -593,15 +615,22 @@ section div div form p{
 }
 /* -----------------------------------///////BLOG///////--------------------------------------------- */
 #sectionBlogGrilla{
-    grid-template-rows: 300px 300px 300px 500px;
+    grid-template-rows: 400px 400px 400px 500px;
 }
 .fotosDeNotasBlog{
-    height: 100%;
+    height: 60%;
     width: 300px;
     margin-left: 40px;
+    margin-top: 10%;
 }
 .padreEntrevistas{
     flex-direction: row;
+}
+.parrafoEntrevistaBlog{
+    font-size: 14px;
+}
+.tituloEntrevistaBlog{
+    font-size: 25px;
 }
 /* -----------------------------------///////MULTIMEDIA///////--------------------------------------------- */
 #grillaMultimedia{
@@ -805,6 +834,12 @@ section div div form p{
     .padreEntrevistas{
         flex-direction: row;
     }
+    .tituloEntrevistaBlog{
+        font-size: 40px;
+    }
+    #iframeSpoty{
+        margin-top: 100px;
+    }
 /* -----------------------------------///////MULTIMEDIA///////--------------------------------------------- */
 #grillaMultimedia{
     grid-template-columns: 20% 20% 20% 20%;
@@ -813,6 +848,7 @@ section div div form p{
                         "video1 video1 video2 video2"
                         "foto5 foto6 foto7 foto8"
                         "foto9 foto9 foto9 foto9";
+
 }
 /* -----------------------------------///////SERVICIOS///////--------------------------------------------- */
 #grillaServicios{ 
