@@ -20,9 +20,10 @@ footer{
     background-color: #121C4A;
 }
 #logoHistorias{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
+/* Menu de navegacion */
 #navBar{
     background-color:#121C4A;
     margin-bottom: 0;
@@ -59,6 +60,8 @@ h1{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
+/* Seccion entrevistas */
+
 h2{
     font-size: 40px;
     padding-bottom: 40px;
@@ -138,42 +141,16 @@ footer a{
     text-decoration: none;
 }
 /* ----------------------------------////CONTACTO/////---------------------------------- */
-.titulos{
-    font-size: 90px;
-    
-}
-#padreFormFoto{
-    padding-top: 35px;
-    padding-bottom: 35px;
-}
+
 
 #fotoMadrid{
     width: 100%;
+    margin-bottom: 80px;
     }
-#divForm{
-    display: flex;
-    align-items: center ;
-    justify-content: center;
-
-    width: 100%;
-
-}
-#formContacto{
-    border: 10px double #121C4A;
-    width: 80%;
-    font-size: 30px;
-    background-color: #7284D4;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-section div div form p{
-    color: seashell;
-    text-align: center;
-    text-decoration: underline;
+    form{
+        margin-bottom: 30px;
     }
+
 /* -----------------------------------///////BLOG///////--------------------------------------------- */
 #sectionBlogGrilla{
     display: grid;
@@ -435,12 +412,6 @@ section div div form p{
         align-items: center;
 }
 /* ---------------------------/////CONTACTO///// -------------------------------------- */
-#padreFormFoto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
 #fotoMadrid{
 
     margin-bottom: 40px;
@@ -467,6 +438,9 @@ section div div form p{
 .lugarDeNota{
     padding-top: 4px;
 }
+.parrafoEntrevistaBlog{
+    font-size: 14px;
+}
 /* -----------------------------------///////MULTIMEDIA///////--------------------------------------------- */
 #grillaMultimedia{
     grid-template-columns: 100%;
@@ -482,6 +456,9 @@ section div div form p{
                         "foto7"
                         "foto8"
                         "foto9";
+}
+#multimediaTitulo{
+    width: 50%;
 }
 /* -----------------------------------///////SERVICIOS///////--------------------------------------------- */
 #grillaServicios{
@@ -500,8 +477,11 @@ section div div form p{
 }
 #fotografoFoto{
     grid-area: foto1;
-    height: 100%;
+    height: 80%;
     width: 100%;
+}
+#redaccionFoto{
+    height: 80%;
 }
 }
 @media only screen and (min-width:601px){
@@ -603,12 +583,6 @@ section div div form p{
     width: 90px;
 }
 /* ---------------------------/////SECCION CONTACTO///// -------------------------------------- */
-#padreFormFoto{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    
-}
 #fotoMadrid{
     height: 450px;
     
@@ -813,14 +787,10 @@ section div div form p{
         padding-right: 10px;
     }
     /* ---------------------------////SECCION CONTACTO//// -------------------------------------- */
-    #padreFormFoto{ 
-        display: flex;
-        flex-direction: row;
-        
-    }
+    
     #fotoMadrid{
-        width: 50%;
-        padding-left: 60px;
+        width: 90%;
+        padding-left: 120px;
     }
     /* -----------------------------------///////BLOG///////--------------------------------------------- */
     #sectionBlogGrilla{
@@ -868,69 +838,3 @@ section div div form p{
     width: 100%;
 }
 }
-
-/*                                        Servicios                                               */
-
-/* #grillaServicios{ 
-    display: grid;
-    grid-template-columns: 40% 40%;
-    grid-template-rows: 400px 400px;
-    grid-template-areas: "texto1 foto1"
-                        "foto2 texto2";
-    column-gap: 65px;
-    row-gap: 45px;
-    justify-content: center;
-    background-color: white;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-.fotoServicios{
-    width: 100%;
-    height: 100%;
-    border-radius: 25%;
-}
-#divFotografia{
-    grid-area: texto1;
-    font-size: 20px;
-}
-#divFotografia h2{
-    text-align: center;
-    margin-bottom: 40px;
-    margin-top: 40px;
-}
-#fotografoFoto{
-    grid-area: foto1;
-}
-#divRedaccion{
-    grid-area: texto2;
-    font-size: 20px;
-}
-#divRedaccion h2{
-    text-align: center;
-    margin-bottom: 40px;
-    margin-top: 40px;
-
-}
-#redaccionFoto{
-    grid-area: foto2;
-}
-.miniGrilla{
-    display: grid;
-    grid-template-columns: 20% 70%;
-    grid-template-rows: 100%;
-    grid-template-areas: "fotopremio textopremio";
-    justify-content: center;
-    height: 180px;
-    padding-top: 15px;
-}
-.nombrePremio{
-    grid-area: textopremio;
-    font-size: 20px;
-    font-weight: bolder;
-    align-self: flex-start;
-    padding-top: 25px;
-}
-.imagenPremio{
-    grid-area: fotopremio;
-    height: 50%;
-} */

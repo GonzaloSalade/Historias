@@ -12,6 +12,7 @@
 </head>
 <body>
     <header class="header">
+        <!--            -Menu de navegacion-                  -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-light">
             <div id="navBar" class="container-fluid">
             <a class="navbar-brand" href="../index.html"><img  id="logoHistorias" src="../Images/Historiaslogonuevo1.png" alt=""></a>
@@ -44,29 +45,47 @@
     </header>
     <main>
         <h1 class="titulos animate__animated animate__zoomInLeft" >Contacto</h1>
-        <!--Formulario de contacto-->
+        <!--            -formulario de contacto-                  -->
         <section>
-            <div id="padreFormFoto">
                 <img id="fotoMadrid" src="../Images/madrid.jpg" alt="ciudad de madrid">
-                <div id="divForm">
-                    <form id="formContacto" action="formulario.py">
-                        <p>Dejanos tu Mensaje!</p>
-                        <label for="nombre">Nombre</label>
-                        <input type="text"  id="nombre">
-                        <label for="apellido">Apellido</label>
-                        <input type="text"  id="apellido">
-                        <label for="telefono">Telefono</label>
-                        <input type="number"  id="telefono">
-                        <label for="email">Email</label>
-                        <input type="text"  id="email">
-                        <label for="DejanostuMsj">Dejanos tu Mensaje</label>
-                        <textarea id="DejanostuMsj"></textarea>
-                        <input class="button" type="submit">
-                    </form>
+                <div class="row">
+                    <div class="col col-lg-8 offset-lg-2 col-md-8 offset-md-2">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombre1" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre1" >
+                                
+                            </div>
+                            <div class="mb-3">
+                                <label for="apellido1" class="form-label">Apellido</label>
+                                <input type="text" class="form-control" id="apellido1" >
+                                
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono1" class="form-label">Telefono</label>
+                                <input type="email" class="form-control" id="telefono1" >
+                                
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">Nunca compartiremos tu email ni ninguno de tus datos personales.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu Mensaje</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">No soy un Robot</label>
+                            </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                    </div>
                 </div>
-            </div>
         </section>
     </main>
+    <!--            -footer-                  -->
     <footer id="pieDePagina">
         <a href="https://www.youtube.com/">Mi canal de Youtube</a>
         <p>Sitio creado por <strong>Gonzalo Salade</strong></p>
