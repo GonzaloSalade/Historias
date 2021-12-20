@@ -116,17 +116,24 @@
         </div>
             
             <!--            -Formulario-                  -->
-            <div id="newsletter">
-                <form  id="tituloForm" action="newsletter.py">Suscribite al Newsletter!</form>
-                    <label for="email">Email</label>
-                    <input type="text" id="email">
-                    <label for="nosoyrobot">No soy un Robot</label>
-                    <input type="checkbox" id="noSoyRobot"> 
-                    <label for="enviar"></label>
-                    <input type="submit" id="enviar">
-            </div>
+            <section id="newsletterHome">
+                <p>Suscribite al Newsletter!</p>
+                <div class="row">
+                    <div class="col-8 offset-2 col-lg-8 offset-lg-2 col-md-8 offset-md-2">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Correo Electronico</label>
+                        </div>
+                        <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         </main>
+        <!--            -Footer-                  -->
         <footer>
             <div  class="conteiner">
                 <div class="divFooter d-flex justify-content-between align-items-center">

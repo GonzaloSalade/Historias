@@ -97,34 +97,21 @@ h2{
     box-shadow: 5px 5px 5px;
 }
 /* -------------------------SECCION TRABAJOS------------------------------------ */
-
+#carousel{
+    margin-bottom: 50px;
+}
 /* ---------------------------SECCION FORM -------------------------------------- */
-#newsletter{
-    height: 300px;
-    width: 80%;
-    border:none;
-    text-align: center;
-    margin: 20px auto;
-    margin-bottom: 60px;
-    margin-top: 60px;
-    color:white;
-    background-color: #AEB8E3;
-    font-size: 25px;
+#newsletterHome{
+    background-color: yellow;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    text-align: center;
+    padding-bottom: 15px;
 }
-#email{
-    width: 50%;
-    margin-left: 25%;
+#newsletterHome p{
+    font-size: 50px;
 }
-#enviar{
-    width: 50%;
-    margin-left: 25%;
-}
-#tituloForm{
-    font-size: 45px;
-}
+
 /* -------------------------------FOOTER------------------------------------------------------- */
 footer{
     height: 90px;
@@ -432,6 +419,7 @@ footer a{
     margin-bottom: 40px;
     
 }
+
 /* -----------------------------------///////BLOG///////--------------------------------------------- */
 
 #sectionBlogGrilla{
@@ -728,7 +716,7 @@ footer a{
     }
     /* -------------------------SECCION TRABAJOS------------------------------------ */
     .imgCarrousel{
-        max-width: 100%;
+        max-width: 80%;
         height: auto;
     }
     /* ---------------------------////SECCION CONTACTO//// -------------------------------------- */
