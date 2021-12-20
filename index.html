@@ -66,7 +66,7 @@
                         <p class="fechaDeNota">5 de Mayo</p>
                     </article>
                     <article class="articleHome" id="hamiltonIsland">
-                        <img class="imagenesDeNotas" src="Images/Whiteheaven.jpeg" alt="">
+                        <img class="imagenesDeNotas" src="Images/Whiteheaven.jpeg" alt="whiteheaven">
                         <p class="lugarDeNota">Hamilton Island</p>
                         <h3 id="titulosEntrevista">"Esta isla es uno de los lugares mas lindos del mundo"</h3>
                         <p class="fechaDeNota">27 de Julio</p>
@@ -90,16 +90,31 @@
                 <iframe src="https://open.spotify.com/embed/track/2EIh5ErBtGcTLrhuQvbsYM"  allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
             </article>
             </div>
+            
             <!--            -Seccion trabajos-                  -->
-            <div id="divTrabajosMobile">
-                <h2 class="tituloSeccionTrabajos">Trabajos</h2>
-                <img src="Images/Canal13.png" alt="Logo Canal 13" id="canalTrece" class="logosTrabajos">
-                <img src="Images/Telefe.png" alt="Logo Telefe" id="telefe" class="logosTrabajos">
-                <img src="Images/urbana.png" alt="Logo urbana play" id="urbana" class="logosTrabajos">
-                <img src="Images/logoinfobae.png" alt="logo infobae" id="infobae" class="logosTrabajos">
-                <img src="Images/logoclarintrans.png" alt="logo clarin" id="clarin" class="logosTrabajos">
-                </section>
-            </div>
+            <div>
+                <h2>Trabajos</h2>
+                <div id="carousel" class="carousel slide " data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="Images/Telefe.png" class="d-block mx-auto imgCarrousel" alt="logo telefe">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/Canal13.png" class="d-block mx-auto imgCarrousel" alt="logo canal 13">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/logoclarintrans.png" class="d-block mx-auto imgCarrousel" alt="logo clarin">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/logoinfobae.png" class="d-block mx-auto imgCarrousel" alt="logo infobae">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/urbana.png" class="d-block mx-auto imgCarrousel" alt="logo urbana play">
+                    </div>
+                    </div>
+                </div>
+        </div>
+            
             <!--            -Formulario-                  -->
             <div id="newsletter">
                 <form  id="tituloForm" action="newsletter.py">Suscribite al Newsletter!</form>
@@ -113,10 +128,19 @@
 
         </main>
         <footer>
-            <a href="https://www.youtube.com/">Mi canal de Youtube</a>
-            <p>Sitio creado por <strong>Gonzalo Salade</strong></p>
+            <div  class="conteiner">
+                <div class="divFooter d-flex justify-content-between align-items-center">
+                    <div class="textoFooter">
+                        <p>Sitio creado por <strong>Gonzalo Salade</strong></p>
+                    </div>
+                    <div class="">
+                        <a href="https://www.instagram.com/?hl=es-la"> <img class="imgFooter" src="Images/instagram.png" alt="logo instagram"></a>
+                        <a href="https://twitter.com/home"> <img class="imgFooter" src="Images/gorjeo.png" alt="logo twiter"></a>
+                        <a href="#navBar"> <img class="imgFooter" src="Images/flecha-hacia-arriba.png" alt="flecha para arriba"></a>
+                    </div>
+                </div> 
+            </div>
         </footer>
-        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

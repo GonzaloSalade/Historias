@@ -97,11 +97,7 @@ h2{
     box-shadow: 5px 5px 5px;
 }
 /* -------------------------SECCION TRABAJOS------------------------------------ */
-.logosTrabajos{
-    width: 30%;
-    height: 30%;
-    padding-top: 20px;
-}
+
 /* ---------------------------SECCION FORM -------------------------------------- */
 #newsletter{
     height: 300px;
@@ -134,11 +130,21 @@ footer{
     height: 90px;
     background-image: linear-gradient(to left, black, #121C4A);
     color:#AEB8E3;
-    padding: 7px;
+    height: 100% ;
+   padding: 20px 10px;
 }
 footer a{
     color: white;
     text-decoration: none;
+}
+.imgFooter{
+    height: 50px;
+    width: 50px;
+    margin: 10px 10px 0px 10px;
+}
+.divFooter{
+    height: 100%;
+    
 }
 /* ----------------------------------////CONTACTO/////---------------------------------- */
 
@@ -395,6 +401,7 @@ footer a{
     .fechaDeNota{
         text-align: left;
     }
+    
     /* --------------------------------SECCION PODCAST------------------------------------ */
     #divPodcastMobile{
         text-align: center;
@@ -406,10 +413,18 @@ footer a{
         margin-bottom: 20px;
     }
 /* -------------------------SECCION TRABAJOS------------------------------------ */
-    #divTrabajosMobile{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+.imgCarrousel{
+    max-width:45%;
+    height:auto;
+}
+/* -------------------------------FOOTER---------------------------------------------- */
+.imgFooter{
+    height: 30px;
+    width: 30px;
+    margin: 10px 10px 0px 10px;
+}
+.textoFooter p{
+    font-size: 10px;
 }
 /* ---------------------------/////CONTACTO///// -------------------------------------- */
 #fotoMadrid{
@@ -420,7 +435,8 @@ footer a{
 /* -----------------------------------///////BLOG///////--------------------------------------------- */
 
 #sectionBlogGrilla{
-    grid-template-rows: 700px 700px 700px 700px;
+    grid-template-rows: auto;
+    padding-bottom: 20px;
 }
 .fotosDeNotasBlog{
     height: 50%;
@@ -535,53 +551,20 @@ footer a{
     /* --------------------------------SECCION PODCAST------------------------------------ */
     #divPodcastMobile{
         text-align: center;
+        height: auto;
     }
     .podcast{
         padding-bottom: 50px;
+        height: auto;
 }
     .logosTrabajos{
         padding-right: 10px;
     }
     /* -------------------------SECCION TRABAJOS------------------------------------ */
-    #divTrabajosMobile{
-        display: grid;
-        grid-template-columns: 20% 20% 20% 20% 20%;
-        grid-template-rows: 20% 80%;
-        grid-template-areas: "titulo titulo titulo titulo titulo"
-                            "trece telefe urbana infobae clarin";
-        height:400;
-        width: 100%;
-        justify-items: center;
-        row-gap: 30px;
+    .imgCarrousel{
+        max-width: 70%;
+        height: auto;
     }
-    .tituloSeccionTrabajos{
-        grid-area: titulo;
-        font-size: 40px;
-        margin-bottom: 20px;
-    }
-    #canalTrece{
-        grid-area: trece;
-        width: 70px;
-        height: 70px;
-    }
-    #telefe{
-        grid-area: telefe;
-        height: 50px;
-        width: 80px;
-    }
-    #urbana{
-        grid-area: urbana;
-        height: 60px;
-        width: 60px;
-    }
-    #infobae{
-        grid-area: infobae;
-        width: 90px;
-    }
-    #clarin{
-    grid-area: clarin;
-    width: 90px;
-}
 /* ---------------------------/////SECCION CONTACTO///// -------------------------------------- */
 #fotoMadrid{
     height: 450px;
@@ -744,47 +727,9 @@ footer a{
         font-size: 40px;
     }
     /* -------------------------SECCION TRABAJOS------------------------------------ */
-    #divTrabajosMobile{
-        display: grid;
-        grid-template-columns: 20% 20% 20% 20% 20%;
-        grid-template-rows: 20% 80%;
-        grid-template-areas: "titulo titulo titulo titulo titulo"
-                            "trece telefe urbana infobae clarin";
-        height:400;
-        width: 100%;
-        justify-items: center;
-        row-gap: 30px;
-    }
-    .tituloSeccionTrabajos{
-        grid-area: titulo;
-        font-size: 40px;
-        margin-bottom: 20px;
-    }
-    #canalTrece{
-        grid-area: trece;
-        width: 70px;
-        height: 70px;
-    }
-    #telefe{
-        grid-area: telefe;
-        height: 50px;
-        width: 80px;
-    }
-    #urbana{
-        grid-area: urbana;
-        height: 60px;
-        width: 60px;
-    }
-    #infobae{
-        grid-area: infobae;
-        width: 90px;
-    }
-    #clarin{
-        grid-area: clarin;
-        width: 90px;
-    }
-    .logosTrabajos{
-        padding-right: 10px;
+    .imgCarrousel{
+        max-width: 100%;
+        height: auto;
     }
     /* ---------------------------////SECCION CONTACTO//// -------------------------------------- */
     
@@ -794,10 +739,11 @@ footer a{
     }
     /* -----------------------------------///////BLOG///////--------------------------------------------- */
     #sectionBlogGrilla{
-        grid-template-rows: 300px 300px 300px 600px;
+        grid-template-rows: auto;
+        margin-bottom: 20px;
     }
     .fotosDeNotasBlog{
-        height: 100%;
+        height: 80%;
         width: 300px;
         margin-left: 40px;
     }
