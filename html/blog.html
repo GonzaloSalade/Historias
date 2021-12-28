@@ -7,7 +7,7 @@
     <title>Historias En Cada Lugar</title>
     <link rel="shortcut icon" href="../Images/Historiaslogonuevo1.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../Css/Styles.css">
 </head>
@@ -24,10 +24,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item textColorLI">
-                        <a class="nav-link active textColorLI" aria-current="page" href="../index.html">Home</a>
+                        <a class="nav-link  textColorLI" aria-current="page" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item textColorLI">
-                        <a class="nav-link" href="blog.html">Blog</a>
+                        <a class="nav-link " href="blog.html">Blog</a>
                     </li>
                     <li class="nav-item textColorLI">
                         <a class="nav-link " aria-current="page" href="multimedia.html">Multimedia</a>
@@ -46,11 +46,12 @@
         
     </header>
     <main>
-        <!-- -----------------------Carrousel Baners------------------------------------ -->
+        <!--                             Carrousel Baners                            -->
         <div id="carouselbaners" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                 <img src="../Images/bannerPodcast.png" class="d-block  carouselPaginas w-100" alt="banner podcast">
+                </div>
             </div>
             <div class="carousel-item">
                 <img src="../Images/bannerYoutube.png" class="d-block  carouselPaginas w-100" alt="banner youtube">
@@ -59,10 +60,11 @@
                 <img src="../Images/bannerayuda.png" class="d-block  carouselPaginas w-100" alt="=banner ayuda">
             </div>
         </div>
+
         <h1  id="tituloBlog" class="titulos animate__animated animate__zoomInLeft" >Blog</h1>
         <!--            -Seccion entrevistas-                  -->
-        <section id="sectionBlogGrilla">
-            <article id="entrevistaSydney" class="entrevistaBlog">
+        <div id="sectionBlogGrilla">
+            <div id="entrevistaSydney" class="entrevistaBlog">
                 <a class="padreEntrevistas" href="">
                     <img class="fotosDeNotasBlog" id="fotoSydneyBlog" src="../Images/Sydney.webp" alt="Sydney">
                     <div id="divSydney" class="divDentroEntrevistasBlog">
@@ -74,8 +76,8 @@
                         <p class="lugarDeNota">Sydney</p>
                     </div>
                 </a>
-            </article>
-            <article id="entrevistaMelbourne" class="entrevistaBlog">
+            </div>
+            <div id="entrevistaMelbourne" class="entrevistaBlog">
                 <a class="padreEntrevistas" href="">
                     <img id="fotoMelbourneBlog" class="fotosDeNotasBlog"  src="../Images/Melbourne.jpeg" alt="Melbourne">
                     <div id="divMelbourne" class="divDentroEntrevistasBlog">
@@ -87,8 +89,8 @@
                         <p class="lugarDeNota">Melbourne</p>
                     </div>
                 </a>
-            </article>
-            <article class="entrevistaBlog">
+            </div>
+            <div class="entrevistaBlog">
                 <a class="padreEntrevistas" href="">
                     <img class="fotosDeNotasBlog" src="../Images/Whiteheaven.jpeg" alt="Hamilton Island">
                     <div class="divDentroEntrevistasBlog">
@@ -100,14 +102,14 @@
                         <p class="lugarDeNota">Hamilton Island</p>
                     </div>
                 </a>
-            </article>
+            </div>
+        </div>
             <!--            -Seccion podcast-                  -->
-            <article id="podcastMapaBlog">
+            <div id="podcastMapaBlog">
                 <div id="podcastBlog">
                     <iframe id="iframeSpoty" class="iframeBlog" src="https://open.spotify.com/embed/playlist/1E7HjetCy3ufnSAYGcnbTz" width="80%" height="400" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                 </div>
-            </article>
-        </section>
+            </div>
     </main>
     <!--            -footer-                  -->
     <footer>
