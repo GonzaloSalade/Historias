@@ -1,3 +1,4 @@
+@import url(_variables.scss);
 *{
     margin: 0;
     padding: 0;
@@ -62,29 +63,26 @@ h1{
 }
 /* Seccion entrevistas */
 
-h2{
-    font-size: 40px;
-    padding-bottom: 40px;
-    text-align: center;
+.conteinerNotasIndex{
+    display: flex;
 }
-#sectionEntrevistas{
-    width: 100%;
+.imgNotasIndex{
+    width: auto;
+    height: 190px;
 }
-.articleHome{
-    border-radius: 10%;
+
+.buttonIr{
+    border: solid 1px #121C4A;
+    background-color: #FFF;
+    color: #121C4A;
+    padding: .375rem .75rem;
 }
-#titulosEntrevista{
-    text-decoration: none;
-    color: black;
+.buttonCompartir{
+    @extend .buttonIr;
+    color: #FFF;
+    background-color: #121C4A;
 }
-.imagenesDeNotas{
-    border-radius: 10%;    
-}
-.lugarDeNota{
-    color: rgb(190, 91, 91);
-    font-weight: 900;
-    text-align: left;
-}
+
 /* -----------------------------------seccion podcast ---------------------------------- */
 .podcast{
     height:100px;
@@ -217,6 +215,14 @@ footer a{
     margin-bottom: 20px;
     
 }
+@mixin mensaje-Gracias ($colorFondo, $colorLetra){
+    color: $colorLetra;
+    background-color: $colorFondo;
+    
+}
+.alertaGracias{
+    @include mensaje-Gracias(green,white )
+}
 
 /* -----------------------------------///////MULTIMEDIA///////--------------------------------------------- */
 #grillaMultimedia{
@@ -276,6 +282,9 @@ footer a{
 }
 .iframeMultimedia{
     height: 300px;
+}
+.alertaGraciasMultimedia{
+    @include mensaje-Gracias(yellow,blue )
 }
 /* -----------------------------------///////SERVICIOS///////--------------------------------------------- */
 #grillaServicios{
@@ -373,26 +382,13 @@ footer a{
         margin-top: 100px;
         
         }
-    #grillaEntrevistas{
-        display: block;
-    }
-    .articleHome{
-        display: block;
-        position: relative;
-        left: 10%;
-        margin-bottom: 60px;
-    }
-    #titulosEntrevista{
-        width: 85%;
-        
-    }
-    .imagenesDeNotas{
-        width: 80%;
-        height: 75%;
-    }
-    .fechaDeNota{
-        text-align: left;
-    }
+        .conteinerNotasIndex{
+            flex-direction: column;
+            align-items: center;
+        }
+        .card{
+            margin-bottom: 20px;
+        }
     
     /* --------------------------------SECCION PODCAST------------------------------------ */
     #divPodcastMobile{
@@ -517,27 +513,12 @@ footer a{
         width: 100%;
     }
     /* -------------------------------main-------------------------------- */
-    #grillaEntrevistas{
-        display: block;
+    .conteinerNotasIndex{
+        flex-direction: column;
+        align-items: center;
     }
-    .articleHome{
-        display: block;
-        position: relative;
-        left: 10%;
-        margin-bottom: 60px;
-    }
-    #titulosEntrevista{
-        width: 85%;
-        font-size: 40px;
-    }
-    .imagenesDeNotas{
-        width: 80%;
-        height: 75%;
-        
-        
-    }
-    .fechaDeNota{
-        text-align: left;
+    .card{
+        margin-bottom: 20px;
     }
     /* --------------------------------SECCION PODCAST------------------------------------ */
     #divPodcastMobile{
@@ -639,57 +620,18 @@ footer a{
     h1{
         font-size: 95px;
     }
-    #sectionEntrevistas{
-        background-image: url(../Images/fondocondibujo.png);
-        background-repeat: no-repeat;
-    }
-    #grillaEntrevistas{
-        display: grid;
-        width: 100%;
-        grid-template-columns: 30% 18% 18% 18%;
-        grid-template-rows: 100px 400px ;
-        grid-template-areas:"imagenLogo titulo titulo titulo" 
-                            "imagenLogo entrevista1 entrevista2 entrevista3";
-        column-gap: 30px;
-    }
-    #titulosEntrevista{
-        margin-top: 15px;
-        margin-bottom: 10px;
-        font-size: 20px;
-    }
-    .imagenesDeNotas{
-        width: 96%;
-        height: 140px;
-        padding-top: 2px;
+    .conteinerNotasIndex{
         
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 40px;
     }
-    #grillaEntrevistas h2{
-        grid-area: titulo;
+    #tituloEntrevistasIndex{
+        text-align: center;
         font-size: 40px;
-        margin-left: 110px;
-        margin-top: 25px;
-        
+        margin-top: 40px;
     }
-    #sydney{
-        grid-area: entrevista1;
-    }
-    #melbourne{
-        grid-area: entrevista2;
-    }
-    #hamiltonIsland{
-        grid-area: entrevista3;
-    }
-    #microfono{
-        grid-area: imagenLogo;
-        width: 90%;
-        padding-top: 100px;
-    }
-    .fechaDeNota{
-        padding-right: 19px;
-    }
-    .lugarDeNota{
-        padding-right: 19px;
-    }
+    
     /* --------------------------------SECCION PODCAST------------------------------------ */
     #divPodcastMobile{
         display: grid;

@@ -1,614 +1,567 @@
-    * {
-    margin: 0;
-    padding: 0; }
+@import url(_variables.scss);
+* {
+  margin: 0;
+  padding: 0; }
 
-    /*                                             header                                        */
-    #grillaPrincipal {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-areas: "header" "main" "footer"; }
+/*                                             header                                        */
+#grillaPrincipal {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "header" "main" "footer"; }
 
-    header {
-    background-color: #121C4A;
-    display: flex; }
+header {
+  background-color: #121C4A;
+  display: flex; }
 
-    footer {
-    background-color: #121C4A; }
+footer {
+  background-color: #121C4A; }
 
-    #logoHistorias {
-    width: 80px;
-    height: 80px; }
+#logoHistorias {
+  width: 80px;
+  height: 80px; }
 
-    /* Menu de navegacion */
-    #navBar {
-    background-color: #121C4A;
-    margin-bottom: 0; }
+/* Menu de navegacion */
+#navBar {
+  background-color: #121C4A;
+  margin-bottom: 0; }
 
-    .bg-light {
-    --bs-bg-opacity: 0; }
+.bg-light {
+  --bs-bg-opacity: 0; }
 
-    a:-webkit-any-link {
-    color: #AEB8E3;
-    cursor: pointer;
-    text-decoration: none; }
+a:-webkit-any-link {
+  color: #AEB8E3;
+  cursor: pointer;
+  text-decoration: none; }
 
-    /*                                    Main                                 */
-    .textoEnFoto {
-    background-image: url(../Images/puentesydney.jpeg);
-    background-size: cover;
-    background-position: center;
-    height: 700px;
-    position: relative;
-    width: 100%; }
+/*                                    Main                                 */
+.textoEnFoto {
+  background-image: url(../Images/puentesydney.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  position: relative;
+  width: 100%; }
 
-    .textoEnTexto {
-    text-align: center;
-    color: #AEB8E3;
-    padding-top: 1px;
-    padding-bottom: 500px; }
+.textoEnTexto {
+  text-align: center;
+  color: #AEB8E3;
+  padding-top: 1px;
+  padding-bottom: 500px; }
 
-    h1 {
-    font-style: italic;
-    font-weight: 500;
-    font-size: 60px;
-    color: #AEB8E3;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif; }
+h1 {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 60px;
+  color: #AEB8E3;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif; }
 
-    /* Seccion entrevistas */
-    h2 {
-    font-size: 40px;
-    padding-bottom: 40px;
-    text-align: center; }
+/* Seccion entrevistas */
+.conteinerNotasIndex {
+  display: flex; }
 
-    #sectionEntrevistas {
-    width: 100%; }
+.imgNotasIndex {
+  width: auto;
+  height: 190px; }
 
-    .articleHome {
-    border-radius: 10%; }
+.buttonIr, .buttonCompartir {
+  border: solid 1px #121C4A;
+  background-color: #FFF;
+  color: #121C4A;
+  padding: .375rem .75rem; }
 
-    #titulosEntrevista {
-    text-decoration: none;
-    color: black; }
+.buttonCompartir {
+  color: #FFF;
+  background-color: #121C4A; }
 
-    .imagenesDeNotas {
-    border-radius: 10%; }
+/* -----------------------------------seccion podcast ---------------------------------- */
+.podcast {
+  height: 100px;
+  padding-top: 30px; }
 
-    .lugarDeNota {
-    color: #be5b5b;
-    font-weight: 900;
-    text-align: left; }
+.podcast iframe {
+  height: 80px;
+  border: none;
+  border-radius: 5%;
+  box-shadow: 5px 5px 5px; }
 
-    /* -----------------------------------seccion podcast ---------------------------------- */
-    .podcast {
-    height: 100px;
-    padding-top: 30px; }
+/* -------------------------SECCION TRABAJOS------------------------------------ */
+#carousel {
+  margin-bottom: 50px; }
 
-    .podcast iframe {
-    height: 80px;
-    border: none;
-    border-radius: 5%;
-    box-shadow: 5px 5px 5px; }
+/* ---------------------------SECCION FORM -------------------------------------- */
+#newsletterHome {
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px; }
 
-    /* -------------------------SECCION TRABAJOS------------------------------------ */
-    #carousel {
-    margin-bottom: 50px; }
+#newsletterHome p {
+  font-size: 50px; }
 
-    /* ---------------------------SECCION FORM -------------------------------------- */
-    #newsletterHome {
-    background-color: yellow;
-    display: flex;
+/* -------------------------------FOOTER------------------------------------------------------- */
+footer {
+  height: 90px;
+  background-image: linear-gradient(to left, black, #121C4A);
+  color: #AEB8E3;
+  height: 100%;
+  padding: 20px 10px; }
+
+footer a {
+  color: white;
+  text-decoration: none; }
+
+.imgFooter {
+  height: 50px;
+  width: 50px;
+  margin: 10px 10px 0px 10px; }
+
+.divFooter {
+  height: 100%; }
+
+/* ----------------------------------////CONTACTO/////---------------------------------- */
+#fotoMadrid {
+  width: 100%;
+  margin-bottom: 80px; }
+
+form {
+  margin-bottom: 30px; }
+
+/* -----------------------------------///////BLOG///////--------------------------------------------- */
+#sectionBlogGrilla {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 300px 300px 300px 300px;
+  grid-template-areas: "notaUno" "notaDos" "notaTres" "notaCuatro";
+  row-gap: 150px;
+  width: 100%;
+  background-image: url(../Images/dise;opruebafondo.png); }
+
+#entrevistaSydney {
+  grid-area: notaUno; }
+
+#entrevistaMelbourne {
+  grid-area: notaDos; }
+
+#entrevistaHamilton {
+  grid-area: notaTres; }
+
+.fotosDeNotasBlog {
+  border-radius: 15%; }
+
+.padreEntrevistas {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  height: 100%;
+  margin-top: 50px; }
+
+.parrafoEntrevistaBlog {
+  padding-left: 35px;
+  width: 90%;
+  color: black; }
+
+.tituloEntrevistaBlog {
+  padding-left: 35px;
+  width: 90%;
+  margin-top: 50px;
+  color: black; }
+
+.fechaDeNota {
+  padding-right: 19px;
+  width: 90%; }
+
+.lugarDeNota {
+  color: #be5b5b;
+  text-align: right;
+  font-weight: 900;
+  padding-right: 19px;
+  width: 90%; }
+
+.divDentroEntrevistasBlog .fechaDeNota {
+  padding-left: 25px; }
+
+#iframeSpoty {
+  grid-area: notaCuatro;
+  width: 80%; }
+
+#podcastBlog {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px; }
+
+.alertaGracias {
+  color: white;
+  background-color: green; }
+
+/* -----------------------------------///////MULTIMEDIA///////--------------------------------------------- */
+#grillaMultimedia {
+  padding-top: 75px;
+  height: auto;
+  width: 100%;
+  display: grid;
+  column-gap: 20px;
+  row-gap: 40px;
+  justify-content: center;
+  margin-bottom: 20px; }
+
+.foto {
+  width: 100%;
+  height: 100%; }
+
+.foto:hover {
+  transform: scale(1.5, 1.5); }
+
+#newYork {
+  grid-area: foto1; }
+
+#tokio {
+  grid-area: foto2; }
+
+#valencia {
+  grid-area: foto3; }
+
+#venecia {
+  grid-area: foto4; }
+
+#iframeUno {
+  grid-area: video1;
+  width: 100%; }
+
+#iframeDos {
+  grid-area: video2;
+  width: 100%; }
+
+#berlin {
+  grid-area: foto5; }
+
+#buenosAires {
+  grid-area: foto6; }
+
+#egipto {
+  grid-area: foto7; }
+
+#machuPichu {
+  grid-area: foto8; }
+
+#otawa {
+  grid-area: foto9; }
+
+.iframeMultimedia {
+  height: 300px; }
+
+.alertaGraciasMultimedia {
+  color: blue;
+  background-color: yellow; }
+
+/* -----------------------------------///////SERVICIOS///////--------------------------------------------- */
+#grillaServicios {
+  display: grid;
+  column-gap: 65px;
+  row-gap: 45px;
+  justify-content: center;
+  background-color: white;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+.fotoServicios {
+  width: 100%;
+  height: 100%;
+  border-radius: 25%; }
+
+#divFotografia {
+  grid-area: texto1;
+  font-size: 20px; }
+
+#divFotografia h2 {
+  text-align: center;
+  margin-top: 10px; }
+
+#fotografoFoto {
+  grid-area: foto1;
+  height: 100%;
+  width: 100%; }
+
+#divRedaccion {
+  grid-area: texto2;
+  font-size: 20px; }
+
+#divRedaccion h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 40px; }
+
+#redaccionFoto {
+  grid-area: foto2; }
+
+.miniGrilla {
+  display: grid;
+  grid-template-columns: 20% 70%;
+  grid-template-rows: 100%;
+  grid-template-areas: "fotopremio textopremio";
+  justify-content: center;
+  height: 180px;
+  padding-top: 15px; }
+
+.nombrePremio {
+  grid-area: textopremio;
+  font-size: 20px;
+  font-weight: bolder;
+  align-self: flex-start;
+  padding-top: 25px; }
+
+.imagenPremio {
+  grid-area: fotopremio;
+  height: 50%; }
+
+@media only screen and (max-width: 600px) {
+  #grillaGral {
+    grid-template-rows: 1,86fr 25,3fr 1fr; }
+  header {
     flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  nav {
+    background-color: #AEB8E3;
+    width: 100%;
+    height: 100%; }
+  nav ul {
+    display: block;
+    position: relative;
+    font-size: 30px;
     text-align: center;
-    padding: 15px; }
-
-    #newsletterHome p {
-    font-size: 50px; }
-
-    /* -------------------------------FOOTER------------------------------------------------------- */
-    footer {
-    height: 90px;
-    background-image: linear-gradient(to left, black, #121C4A);
-    color: #AEB8E3;
-    height: 100%;
-    padding: 20px 10px; }
-
-    footer a {
-    color: white;
-    text-decoration: none; }
-
-    .imgFooter {
-    height: 50px;
-    width: 50px;
+    align-items: center; }
+  #tituloBlog {
+    margin-bottom: 20px; }
+  /* -------------------------------MAIN------------------------------------------ */
+  h2 {
+    margin-top: 100px; }
+  .conteinerNotasIndex {
+    flex-direction: column;
+    align-items: center; }
+  .card {
+    margin-bottom: 20px; }
+  /* --------------------------------SECCION PODCAST------------------------------------ */
+  #divPodcastMobile {
+    text-align: center; }
+  .podcast {
+    padding-bottom: 140px; }
+  h3 {
+    margin-bottom: 20px; }
+  /* -------------------------SECCION TRABAJOS------------------------------------ */
+  .imgCarrousel {
+    max-width: 45%;
+    height: auto; }
+  /* -------------------------------FOOTER---------------------------------------------- */
+  .imgFooter {
+    height: 30px;
+    width: 30px;
     margin: 10px 10px 0px 10px; }
-
-    .divFooter {
-    height: 100%; }
-
-    /* ----------------------------------////CONTACTO/////---------------------------------- */
-    #fotoMadrid {
-    width: 100%;
-    margin-bottom: 80px; }
-
-    form {
-    margin-bottom: 30px; }
-
-    /* -----------------------------------///////BLOG///////--------------------------------------------- */
-    #sectionBlogGrilla {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 300px 300px 300px 300px;
-    grid-template-areas: "notaUno" "notaDos" "notaTres" "notaCuatro";
-    row-gap: 150px;
-    width: 100%;
-    background-image: url(../Images/dise;opruebafondo.png); }
-
-    #entrevistaSydney {
-    grid-area: notaUno; }
-
-    #entrevistaMelbourne {
-    grid-area: notaDos; }
-
-    #entrevistaHamilton {
-    grid-area: notaTres; }
-
-    .fotosDeNotasBlog {
-    border-radius: 15%; }
-
-    .padreEntrevistas {
-    display: flex;
-    text-decoration: none;
-    color: black;
-    height: 100%;
-    margin-top: 50px; }
-
-    .parrafoEntrevistaBlog {
-    padding-left: 35px;
-    width: 90%;
-    color: black; }
-
-    .tituloEntrevistaBlog {
-    padding-left: 35px;
-    width: 90%;
-    margin-top: 50px;
-    color: black; }
-
-    .fechaDeNota {
-    padding-right: 19px;
-    width: 90%; }
-
-    .lugarDeNota {
-    color: #be5b5b;
-    text-align: right;
-    font-weight: 900;
-    padding-right: 19px;
-    width: 90%; }
-
-    .divDentroEntrevistasBlog .fechaDeNota {
-    padding-left: 25px; }
-
-    #iframeSpoty {
-    grid-area: notaCuatro;
+  .textoFooter p {
+    font-size: 10px; }
+  /* ---------------------------/////CONTACTO///// -------------------------------------- */
+  #fotoMadrid {
+    margin-bottom: 40px; }
+  /* -----------------------------------///////BLOG///////--------------------------------------------- */
+  #sectionBlogGrilla {
+    grid-template-rows: auto;
+    padding-bottom: 20px; }
+  .fotosDeNotasBlog {
+    height: 50%;
     width: 80%; }
-
-    #podcastBlog {
-    display: flex;
+  .padreEntrevistas {
+    flex-direction: column;
     justify-content: center;
-    width: 100%;
-    margin-bottom: 20px; }
-
-    /* -----------------------------------///////MULTIMEDIA///////--------------------------------------------- */
-    #grillaMultimedia {
-    padding-top: 75px;
-    height: auto;
-    width: 100%;
-    display: grid;
-    column-gap: 20px;
-    row-gap: 40px;
-    justify-content: center;
-    margin-bottom: 20px; }
-
-    .foto {
-    width: 100%;
-    height: 100%; }
-
-    .foto:hover {
-    transform: scale(1.5, 1.5); }
-
-    #newYork {
-    grid-area: foto1; }
-
-    #tokio {
-    grid-area: foto2; }
-
-    #valencia {
-    grid-area: foto3; }
-
-    #venecia {
-    grid-area: foto4; }
-
-    #iframeUno {
-    grid-area: video1;
-    width: 100%; }
-
-    #iframeDos {
-    grid-area: video2;
-    width: 100%; }
-
-    #berlin {
-    grid-area: foto5; }
-
-    #buenosAires {
-    grid-area: foto6; }
-
-    #egipto {
-    grid-area: foto7; }
-
-    #machuPichu {
-    grid-area: foto8; }
-
-    #otawa {
-    grid-area: foto9; }
-
-    .iframeMultimedia {
-    height: 300px; }
-
-    /* -----------------------------------///////SERVICIOS///////--------------------------------------------- */
-    #grillaServicios {
-    display: grid;
-    column-gap: 65px;
-    row-gap: 45px;
-    justify-content: center;
-    background-color: white;
-    padding-top: 100px;
-    padding-bottom: 100px; }
-
-    .fotoServicios {
-    width: 100%;
-    height: 100%;
-    border-radius: 25%; }
-
-    #divFotografia {
-    grid-area: texto1;
-    font-size: 20px; }
-
-    #divFotografia h2 {
-    text-align: center;
-    margin-top: 10px; }
-
-    #fotografoFoto {
+    align-items: center; }
+  .fechaDeNota {
+    padding-top: 6px; }
+  .lugarDeNota {
+    padding-top: 4px; }
+  .parrafoEntrevistaBlog {
+    font-size: 14px; }
+  /* -----------------------------------///////MULTIMEDIA///////--------------------------------------------- */
+  #grillaMultimedia {
+    grid-template-columns: 100%;
+    grid-template-rows: 11fr;
+    grid-template-areas: "foto1" "foto2" "foto3" "foto4" "video1" "video2" "foto5" "foto6" "foto7" "foto8" "foto9"; }
+  #multimediaTitulo {
+    width: 50%; }
+  /* -----------------------------------///////SERVICIOS///////--------------------------------------------- */
+  #grillaServicios {
+    grid-template-columns: 80%;
+    grid-template-rows: 400px 600px 600px 600px;
+    grid-template-areas: "foto1" "texto1" "foto2" "texto2"; }
+  #divRedaccion h2 {
+    margin-bottom: 1px;
+    margin-top: 1px; }
+  #fotografoFoto {
     grid-area: foto1;
-    height: 100%;
+    height: 80%;
     width: 100%; }
+  #redaccionFoto {
+    height: 80%; } }
 
-    #divRedaccion {
-    grid-area: texto2;
-    font-size: 20px; }
-
-    #divRedaccion h2 {
+@media only screen and (min-width: 601px) {
+  #grillaGral {
+    grid-template-rows: 1,3fr 24fr 1fr; }
+  header {
+    justify-content: center;
+    align-items: center; }
+  nav {
+    background-color: #121C4A;
+    width: 100%; }
+  nav ul {
+    display: flex;
+    position: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-size: 18px;
+    padding-top: 3%;
+    margin-right: 25%;
+    width: 100%; }
+  /* -------------------------------main-------------------------------- */
+  .conteinerNotasIndex {
+    flex-direction: column;
+    align-items: center; }
+  .card {
+    margin-bottom: 20px; }
+  /* --------------------------------SECCION PODCAST------------------------------------ */
+  #divPodcastMobile {
     text-align: center;
+    height: auto; }
+  .podcast {
+    padding-bottom: 50px;
+    height: auto; }
+  .logosTrabajos {
+    padding-right: 10px; }
+  /* -------------------------SECCION TRABAJOS------------------------------------ */
+  .imgCarrousel {
+    max-width: 70%;
+    height: auto; }
+  /* ---------------------------/////SECCION CONTACTO///// -------------------------------------- */
+  #fotoMadrid {
+    height: 450px; }
+  /* -----------------------------------///////BLOG///////--------------------------------------------- */
+  #sectionBlogGrilla {
+    grid-template-rows: 400px 400px 400px 500px; }
+  .fotosDeNotasBlog {
+    height: 60%;
+    width: 300px;
+    margin-left: 40px;
+    margin-top: 10%; }
+  .padreEntrevistas {
+    flex-direction: row; }
+  .parrafoEntrevistaBlog {
+    font-size: 14px; }
+  .tituloEntrevistaBlog {
+    font-size: 25px; }
+  /* -----------------------------------///////MULTIMEDIA///////--------------------------------------------- */
+  #grillaMultimedia {
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 150px 300px 150px 250px;
+    grid-template-areas: "foto1 foto2 foto3 foto4" "video1 video1 video2 video2" "foto5 foto6 foto7 foto8" "foto9 foto9 foto9 foto9"; }
+  /* -----------------------------------///////SERVICIOS///////--------------------------------------------- */
+  #grillaServicios {
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 600px 600px;
+    grid-template-areas: "texto1 foto1" "foto2 texto2"; }
+  #divRedaccion h2 {
     margin-bottom: 40px;
     margin-top: 40px; }
+  #fotografoFoto {
+    grid-area: foto1;
+    height: 70%;
+    width: 100%; } }
 
-    #redaccionFoto {
-    grid-area: foto2; }
-
-    .miniGrilla {
+@media only screen and (min-width: 993px) {
+  #grillaGral {
+    grid-template-rows: 200px 2300px 150px; }
+  .header {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    border-bottom: 4px solid black;
+    justify-content: space-between; }
+  .nav {
+    text-align: right;
+    padding: 10px; }
+  .nav ul li {
+    display: inline;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 22px; }
+  .nav li a {
+    list-style-type: none;
+    color: #AEB8E3; }
+  /* ---------------------------------MAIN---------------------------------------- */
+  h1 {
+    font-size: 95px; }
+  .conteinerNotasIndex {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px; }
+  #tituloEntrevistasIndex {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 40px; }
+  /* --------------------------------SECCION PODCAST------------------------------------ */
+  #divPodcastMobile {
     display: grid;
-    grid-template-columns: 20% 70%;
-    grid-template-rows: 100%;
-    grid-template-areas: "fotopremio textopremio";
-    justify-content: center;
-    height: 180px;
-    padding-top: 15px; }
-
-    .nombrePremio {
-    grid-area: textopremio;
-    font-size: 20px;
-    font-weight: bolder;
-    align-self: flex-start;
-    padding-top: 25px; }
-
-    .imagenPremio {
-    grid-area: fotopremio;
-    height: 50%; }
-
-    @media only screen and (max-width: 600px) {
-        #grillaGral {
-            grid-template-rows: 1,86fr 25,3fr 1fr; }
-        header {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center; }
-        nav {
-            background-color: #AEB8E3;
-            width: 100%;
-            height: 100%; }
-        nav ul {
-            display: block;
-            position: relative;
-            font-size: 30px;
-            text-align: center;
-            align-items: center; }
-        #tituloBlog {
-            margin-bottom: 20px; }
-        /* -------------------------------MAIN------------------------------------------ */
-        h2 {
-            margin-top: 100px; }
-        #grillaEntrevistas {
-            display: block; }
-        .articleHome {
-            display: block;
-            position: relative;
-            left: 10%;
-            margin-bottom: 60px; }
-        #titulosEntrevista {
-            width: 85%; }
-        .imagenesDeNotas {
-            width: 80%;
-            height: 75%; }
-        .fechaDeNota {
-            text-align: left; }
-        /* --------------------------------SECCION PODCAST------------------------------------ */
-        #divPodcastMobile {
-            text-align: center; }
-        .podcast {
-            padding-bottom: 140px; }
-        h3 {
-            margin-bottom: 20px; }
-        /* -------------------------SECCION TRABAJOS------------------------------------ */
-        .imgCarrousel {
-            max-width: 45%;
-            height: auto; }
-        /* -------------------------------FOOTER---------------------------------------------- */
-        .imgFooter {
-            height: 30px;
-            width: 30px;
-            margin: 10px 10px 0px 10px; }
-        .textoFooter p {
-            font-size: 10px; }
-        /* ---------------------------/////CONTACTO///// -------------------------------------- */
-        #fotoMadrid {
-            margin-bottom: 40px; }
-        /* -----------------------------------///////BLOG///////--------------------------------------------- */
-        #sectionBlogGrilla {
-            grid-template-rows: auto;
-            padding-bottom: 20px; }
-        .fotosDeNotasBlog {
-            height: 50%;
-            width: 80%; }
-        .padreEntrevistas {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center; }
-        .fechaDeNota {
-            padding-top: 6px; }
-        .lugarDeNota {
-            padding-top: 4px; }
-        .parrafoEntrevistaBlog {
-            font-size: 14px; }
-        /* -----------------------------------///////MULTIMEDIA///////--------------------------------------------- */
-        #grillaMultimedia {
-            grid-template-columns: 100%;
-            grid-template-rows: 11fr;
-            grid-template-areas: "foto1" "foto2" "foto3" "foto4" "video1" "video2" "foto5" "foto6" "foto7" "foto8" "foto9"; }
-        #multimediaTitulo {
-            width: 50%; }
-        /* -----------------------------------///////SERVICIOS///////--------------------------------------------- */
-        #grillaServicios {
-            grid-template-columns: 80%;
-            grid-template-rows: 400px 600px 600px 600px;
-            grid-template-areas: "foto1" "texto1" "foto2" "texto2"; }
-        #divRedaccion h2 {
-            margin-bottom: 1px;
-            margin-top: 1px; }
-        #fotografoFoto {
-            grid-area: foto1;
-            height: 80%;
-            width: 100%; }
-        #redaccionFoto {
-            height: 80%; }
-    }
-
-    @media only screen and (min-width: 601px) {
-        #grillaGral {
-            grid-template-rows: 1,3fr 24fr 1fr; }
-        header {
-            justify-content: center;
-            align-items: center; }
-        nav {
-            background-color: #121C4A;
-            width: 100%; }
-        nav ul {
-            display: flex;
-            position: row;
-            justify-content: space-evenly;
-            list-style-type: none;
-            font-size: 18px;
-            padding-top: 3%;
-            margin-right: 25%;
-            width: 100%; }
-        /* -------------------------------main-------------------------------- */
-        #grillaEntrevistas {
-            display: block; }
-        .articleHome {
-            display: block;
-            position: relative;
-            left: 10%;
-            margin-bottom: 60px; }
-        #titulosEntrevista {
-            width: 85%;
-            font-size: 40px; }
-        .imagenesDeNotas {
-            width: 80%;
-            height: 75%; }
-        .fechaDeNota {
-            text-align: left; }
-        /* --------------------------------SECCION PODCAST------------------------------------ */
-        #divPodcastMobile {
-            text-align: center;
-            height: auto; }
-        .podcast {
-            padding-bottom: 50px;
-            height: auto; }
-        .logosTrabajos {
-            padding-right: 10px; }
-        /* -------------------------SECCION TRABAJOS------------------------------------ */
-        .imgCarrousel {
-            max-width: 70%;
-            height: auto; }
-        /* ---------------------------/////SECCION CONTACTO///// -------------------------------------- */
-        #fotoMadrid {
-            height: 450px; }
-        /* -----------------------------------///////BLOG///////--------------------------------------------- */
-        #sectionBlogGrilla {
-            grid-template-rows: 400px 400px 400px 500px; }
-        .fotosDeNotasBlog {
-            height: 60%;
-            width: 300px;
-            margin-left: 40px;
-            margin-top: 10%; }
-        .padreEntrevistas {
-            flex-direction: row; }
-        .parrafoEntrevistaBlog {
-            font-size: 14px; }
-        .tituloEntrevistaBlog {
-            font-size: 25px; }
-        /* -----------------------------------///////MULTIMEDIA///////--------------------------------------------- */
-        #grillaMultimedia {
-            grid-template-columns: 20% 20% 20% 20%;
-            grid-template-rows: 150px 300px 150px 250px;
-            grid-template-areas: "foto1 foto2 foto3 foto4" "video1 video1 video2 video2" "foto5 foto6 foto7 foto8" "foto9 foto9 foto9 foto9"; }
-        /* -----------------------------------///////SERVICIOS///////--------------------------------------------- */
-        #grillaServicios {
-            grid-template-columns: 40% 40%;
-            grid-template-rows: 600px 600px;
-            grid-template-areas: "texto1 foto1" "foto2 texto2"; }
-        #divRedaccion h2 {
-            margin-bottom: 40px;
-            margin-top: 40px; }
-        #fotografoFoto {
-            grid-area: foto1;
-            height: 70%;
-            width: 100%; } 
-    }
-
-    @media only screen and (min-width: 993px) {
-        #grillaGral {
-            grid-template-rows: 200px 2300px 150px; }
-        .header {
-            position: sticky;
-            top: 0px;
-            z-index: 10;
-            border-bottom: 4px solid black;
-            justify-content: space-between; }
-        .nav {
-            text-align: right;
-            padding: 10px; }
-        .nav ul li {
-            display: inline;
-            margin-left: 15px;
-            margin-right: 15px;
-            font-size: 22px; }
-        .nav li a {
-            list-style-type: none;
-            color: #AEB8E3; }
-        /* ---------------------------------MAIN---------------------------------------- */
-        h1 {
-            font-size: 95px; }
-        #sectionEntrevistas {
-            background-image: url(../Images/fondocondibujo.png);
-            background-repeat: no-repeat; }
-        #grillaEntrevistas {
-            display: grid;
-            width: 100%;
-            grid-template-columns: 30% 18% 18% 18%;
-            grid-template-rows: 100px 400px;
-            grid-template-areas: "imagenLogo titulo titulo titulo"  "imagenLogo entrevista1 entrevista2 entrevista3";
-            column-gap: 30px; }
-        #titulosEntrevista {
-            margin-top: 15px;
-            margin-bottom: 10px;
-            font-size: 20px; }
-        .imagenesDeNotas {
-            width: 96%;
-            height: 140px;
-            padding-top: 2px; }
-        #grillaEntrevistas h2 {
-            grid-area: titulo;
-            font-size: 40px;
-            margin-left: 110px;
-            margin-top: 25px; }
-        #sydney {
-            grid-area: entrevista1; }
-        #melbourne {
-            grid-area: entrevista2; }
-        #hamiltonIsland {
-            grid-area: entrevista3; }
-        #microfono {
-            grid-area: imagenLogo;
-            width: 90%;
-            padding-top: 100px; }
-        .fechaDeNota {
-            padding-right: 19px; }
-        .lugarDeNota {
-            padding-right: 19px; }
-        /* --------------------------------SECCION PODCAST------------------------------------ */
-        #divPodcastMobile {
-            display: grid;
-            grid-template-columns: 33% 33% 33%;
-            grid-template-rows: 20% 80%;
-            grid-template-areas: "titulo titulo titulo" "paris londres madrid";
-            justify-items: center;
-            margin-bottom: 5px;
-            margin-top: 60px;
-            height: 400px;
-            background-image: url(../Images/dise;opruebafondo.png); }
-        #pcMadrid {
-            grid-area: madrid; }
-        #pcLondres {
-            grid-area: londres; }
-        #pcParis {
-            grid-area: paris; }
-        .tituloSeccionPodcast {
-            grid-area: titulo;
-            font-size: 40px; }
-        /* -------------------------SECCION TRABAJOS------------------------------------ */
-        .imgCarrousel {
-            max-width: 80%;
-            height: auto; }
-        /* ---------------------------////SECCION CONTACTO//// -------------------------------------- */
-        #fotoMadrid {
-            width: 90%;
-            padding-left: 120px; }
-        /* -----------------------------------///////BLOG///////--------------------------------------------- */
-        #sectionBlogGrilla {
-            grid-template-rows: auto;
-            margin-bottom: 20px; }
-        .fotosDeNotasBlog {
-            height: 80%;
-            width: 300px;
-            margin-left: 40px; }
-        .padreEntrevistas {
-            flex-direction: row; }
-        .tituloEntrevistaBlog {
-            font-size: 40px; }
-        #iframeSpoty {
-            margin-top: 100px; }
-        /* -----------------------------------///////MULTIMEDIA///////--------------------------------------------- */
-        #grillaMultimedia {
-            grid-template-columns: 20% 20% 20% 20%;
-            grid-template-rows: 150px 300px 150px 250px;
-            grid-template-areas: "foto1 foto2 foto3 foto4" "video1 video1 video2 video2" "foto5 foto6 foto7 foto8" "foto9 foto9 foto9 foto9"; }
-        /* -----------------------------------///////SERVICIOS///////--------------------------------------------- */
-        #grillaServicios {
-            grid-template-columns: 40% 40%;
-            grid-template-rows: 600px 600px;
-            grid-template-areas: "texto1 foto1" "foto2 texto2"; }
-        #divRedaccion h2 {
-            margin-bottom: 40px;
-            margin-top: 40px; }
-        #fotografoFoto {
-            grid-area: foto1;
-            height: 70%;
-            width: 100%; } }
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: "titulo titulo titulo" "paris londres madrid";
+    justify-items: center;
+    margin-bottom: 5px;
+    margin-top: 60px;
+    height: 400px;
+    background-image: url(../Images/dise;opruebafondo.png); }
+  #pcMadrid {
+    grid-area: madrid; }
+  #pcLondres {
+    grid-area: londres; }
+  #pcParis {
+    grid-area: paris; }
+  .tituloSeccionPodcast {
+    grid-area: titulo;
+    font-size: 40px; }
+  /* -------------------------SECCION TRABAJOS------------------------------------ */
+  .imgCarrousel {
+    max-width: 80%;
+    height: auto; }
+  /* ---------------------------////SECCION CONTACTO//// -------------------------------------- */
+  #fotoMadrid {
+    width: 90%;
+    padding-left: 120px; }
+  /* -----------------------------------///////BLOG///////--------------------------------------------- */
+  #sectionBlogGrilla {
+    grid-template-rows: auto;
+    margin-bottom: 20px; }
+  .fotosDeNotasBlog {
+    height: 80%;
+    width: 300px;
+    margin-left: 40px; }
+  .padreEntrevistas {
+    flex-direction: row; }
+  .tituloEntrevistaBlog {
+    font-size: 40px; }
+  #iframeSpoty {
+    margin-top: 100px; }
+  /* -----------------------------------///////MULTIMEDIA///////--------------------------------------------- */
+  #grillaMultimedia {
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 150px 300px 150px 250px;
+    grid-template-areas: "foto1 foto2 foto3 foto4" "video1 video1 video2 video2" "foto5 foto6 foto7 foto8" "foto9 foto9 foto9 foto9"; }
+  /* -----------------------------------///////SERVICIOS///////--------------------------------------------- */
+  #grillaServicios {
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 600px 600px;
+    grid-template-areas: "texto1 foto1" "foto2 texto2"; }
+  #divRedaccion h2 {
+    margin-bottom: 40px;
+    margin-top: 40px; }
+  #fotografoFoto {
+    grid-area: foto1;
+    height: 70%;
+    width: 100%; } }
