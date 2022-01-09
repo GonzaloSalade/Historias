@@ -171,7 +171,7 @@ form {
 .tituloEntrevistaBlog {
   padding-left: 35px;
   width: 90%;
-  margin-top: 50px;
+  margin-top: 70px;
   color: black; }
 
 .fechaDeNota {
@@ -321,6 +321,24 @@ form {
 .imagenPremio {
   grid-area: fotopremio;
   height: 50%; }
+
+.tituloPaginasNotas {
+  color: black;
+  font-size: 5vw;
+  width: 70%;
+  margin: 40px auto; }
+
+.parrafoNotas {
+  margin: 30px auto;
+  width: 80%; }
+
+.subtituloNotas {
+  margin: 0 auto;
+  width: 80%; }
+
+.fotoNota {
+  width: 80%;
+  margin: 0 auto; }
 
 @media only screen and (max-width: 600px) {
   #grillaGral {
