@@ -7,7 +7,8 @@
 #grillaPrincipal {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-areas: "header" "main" "footer"; }
+  grid-template-areas: "header" "main" "footer";
+  background-image: linear-gradient(to left, #f5f4df, #c6dde2); }
 
 header {
   background-color: #121C4A;
@@ -57,6 +58,37 @@ h1 {
   font-family: Arial, Helvetica, sans-serif; }
 
 /* Seccion entrevistas */
+.contenedorDeContenedor {
+  width: 100%;
+  background-color: white;
+  padding-bottom: 30px;
+  padding-top: 30px; }
+
+.contenedorMaquina {
+  margin: auto;
+  display: table; }
+
+.tituloMaquina {
+  position: relative;
+  float: left;
+  background: white;
+  color: black;
+  font-family: monospace; }
+
+.tituloMaquina span {
+  position: absolute;
+  right: 0;
+  width: 0;
+  background: white;
+  border-left: 1px solid #000;
+  animation: escribir 5s steps(12) infinite alternate; }
+
+@keyframes escribir {
+  from {
+    width: 100%; }
+  to {
+    width: 0%; } }
+
 #tituloEntrevistasIndex {
   text-align: center;
   font-size: 40px;
@@ -81,6 +113,38 @@ h1 {
   background-color: #121C4A; }
 
 /* -----------------------------------seccion podcast ---------------------------------- */
+.contenedorDeContenedor {
+  width: 100%;
+  background-color: white;
+  grid-area: titulo;
+  padding-bottom: 30px;
+  padding-top: 30px; }
+
+.contenedorMaquina {
+  margin: auto;
+  display: table; }
+
+.tituloMaquina {
+  position: relative;
+  float: left;
+  background: white;
+  color: black;
+  font-family: monospace; }
+
+.tituloMaquina span {
+  position: absolute;
+  right: 0;
+  width: 0;
+  background: white;
+  border-left: 1px solid #000;
+  animation: escribirUno 5s steps(8) infinite alternate; }
+
+@keyframes escribirUno {
+  from {
+    width: 100%; }
+  to {
+    width: 0%; } }
+
 .podcast {
   height: 100px;
   padding-top: 30px; }
@@ -92,6 +156,37 @@ h1 {
   box-shadow: 5px 5px 5px; }
 
 /* -------------------------SECCION TRABAJOS------------------------------------ */
+.contenedorDeContenedor {
+  width: 100%;
+  background-color: white;
+  padding-bottom: 30px;
+  padding-top: 30px; }
+
+.contenedorMaquina {
+  margin: auto;
+  display: table; }
+
+.tituloMaquina {
+  position: relative;
+  float: left;
+  background: white;
+  color: black;
+  font-family: monospace; }
+
+.tituloMaquina span {
+  position: absolute;
+  right: 0;
+  width: 0;
+  background: white;
+  border-left: 1px solid #000;
+  animation: escribirDos 5s steps(9) infinite alternate; }
+
+@keyframes escribirDos {
+  from {
+    width: 100%; }
+  to {
+    width: 0%; } }
+
 #carousel {
   margin-bottom: 50px; }
 
@@ -111,7 +206,6 @@ footer {
   height: 90px;
   background-image: linear-gradient(to left, black, #121C4A);
   color: #AEB8E3;
-  height: 100%;
   padding: 20px 10px; }
 
 footer a {
@@ -127,6 +221,12 @@ footer a {
   height: 100%; }
 
 /* ----------------------------------////CONTACTO/////---------------------------------- */
+.mainContacto {
+  background-image: linear-gradient(to left, #f5f4df, #c6dde2); }
+
+.tituloContacto {
+  text-align: center; }
+
 #fotoMadrid {
   width: 100%;
   margin-bottom: 80px; }
@@ -135,58 +235,30 @@ form {
   margin-bottom: 30px; }
 
 /* -----------------------------------///////BLOG///////--------------------------------------------- */
-#sectionBlogGrilla {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 300px 300px 300px 300px;
-  grid-template-areas: "notaUno" "notaDos" "notaTres" "notaCuatro";
-  row-gap: 150px;
-  width: 100%;
-  background-image: url(../Images/dise;opruebafondo.png); }
+.mainBlog {
+  background-image: linear-gradient(to left, #f5f4df, #c6dde2); }
 
-#entrevistaSydney {
-  grid-area: notaUno; }
+.imagenBlogNota {
+  margin: 0 auto;
+  padding: 12px 20px 12px 32px; }
 
-#entrevistaMelbourne {
-  grid-area: notaDos; }
-
-#entrevistaHamilton {
-  grid-area: notaTres; }
-
-.fotosDeNotasBlog {
-  border-radius: 15%; }
-
-.padreEntrevistas {
+.conteinerBlog {
+  border: 1px black;
+  border-style: solid;
+  margin: 2% 2% 2% 2%;
+  border-radius: 3px;
   display: flex;
-  text-decoration: none;
-  color: black;
-  height: 100%;
-  margin-top: 50px; }
+  margin-bottom: 50px;
+  background-image: linear-gradient(to right, #f5f4df, #c6dde2); }
 
-.parrafoEntrevistaBlog {
-  padding-left: 35px;
-  width: 90%;
-  color: black; }
+.parrafoBlog {
+  padding: 10px 4px 10px 8px; }
 
-.tituloEntrevistaBlog {
-  padding-left: 35px;
-  width: 90%;
-  margin-top: 70px;
-  color: black; }
+.tituloBlogNotas {
+  padding: 10px 4px 10px 8px; }
 
-.fechaDeNota {
-  padding-right: 19px;
-  width: 90%; }
-
-.lugarDeNota {
-  color: #be5b5b;
-  text-align: right;
-  font-weight: 900;
-  padding-right: 19px;
-  width: 90%; }
-
-.divDentroEntrevistasBlog .fechaDeNota {
-  padding-left: 25px; }
+.btn {
+  margin-bottom: 10px; }
 
 #iframeSpoty {
   grid-area: notaCuatro;
@@ -211,7 +283,8 @@ form {
   column-gap: 20px;
   row-gap: 40px;
   justify-content: center;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  background-image: linear-gradient(to left, #f5f4df, #c6dde2); }
 
 .foto {
   width: 100%;
@@ -270,12 +343,14 @@ form {
   justify-content: center;
   background-color: white;
   padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  background-image: linear-gradient(to left, #f5f4df, #c6dde2); }
 
 .fotoServicios {
   width: 100%;
   height: 100%;
-  border-radius: 25%; }
+  border-radius: 25%;
+  object-fit: cover; }
 
 #divFotografia {
   grid-area: texto1;
@@ -288,7 +363,8 @@ form {
 #fotografoFoto {
   grid-area: foto1;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  object-fit: cover; }
 
 #divRedaccion {
   grid-area: texto2;
@@ -338,7 +414,7 @@ form {
 
 .fotoNota {
   width: 80%;
-  margin: 0 auto; }
+  margin: auto 10%; }
 
 @media only screen and (max-width: 600px) {
   #grillaGral {
@@ -360,7 +436,7 @@ form {
   #tituloBlog {
     margin-bottom: 20px; }
   /* -------------------------------MAIN------------------------------------------ */
-  h2 {
+  .tituloTrabajos {
     margin-top: 100px; }
   .conteinerNotasIndex {
     flex-direction: column;
@@ -389,22 +465,11 @@ form {
   #fotoMadrid {
     margin-bottom: 40px; }
   /* -----------------------------------///////BLOG///////--------------------------------------------- */
-  #sectionBlogGrilla {
-    grid-template-rows: auto;
-    padding-bottom: 20px; }
-  .fotosDeNotasBlog {
-    height: 50%;
-    width: 80%; }
-  .padreEntrevistas {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  .fechaDeNota {
-    padding-top: 6px; }
-  .lugarDeNota {
-    padding-top: 4px; }
-  .parrafoEntrevistaBlog {
-    font-size: 14px; }
+  .conteinerBlog {
+    flex-direction: column; }
+  .imagenBlogNota {
+    width: 90%;
+    height: 40%; }
   /* -----------------------------------///////MULTIMEDIA///////--------------------------------------------- */
   #grillaMultimedia {
     grid-template-columns: 100%;
@@ -468,19 +533,12 @@ form {
   #fotoMadrid {
     height: 450px; }
   /* -----------------------------------///////BLOG///////--------------------------------------------- */
-  #sectionBlogGrilla {
-    grid-template-rows: 400px 400px 400px 500px; }
-  .fotosDeNotasBlog {
-    height: 60%;
-    width: 300px;
-    margin-left: 40px;
-    margin-top: 10%; }
-  .padreEntrevistas {
-    flex-direction: row; }
-  .parrafoEntrevistaBlog {
-    font-size: 14px; }
-  .tituloEntrevistaBlog {
-    font-size: 25px; }
+  .conteinerBlog {
+    flex-direction: column; }
+  .imagenBlogNota {
+    width: 90%;
+    height: 40%;
+    object-fit: cover; }
   /* -----------------------------------///////MULTIMEDIA///////--------------------------------------------- */
   #grillaMultimedia {
     grid-template-columns: 20% 20% 20% 20%;
@@ -526,17 +584,20 @@ form {
     flex-direction: row;
     justify-content: space-around;
     margin-top: 40px; }
+  #tituloEntrevistasIndex {
+    background-color: #FFF;
+    padding-top: 25px;
+    padding-bottom: 25px; }
   /* --------------------------------SECCION PODCAST------------------------------------ */
   #divPodcastMobile {
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 24% 76%;
     grid-template-areas: "titulo titulo titulo" "paris londres madrid";
     justify-items: center;
     margin-bottom: 5px;
     margin-top: 60px;
-    height: 400px;
-    background-image: url(../Images/dise;opruebafondo.png); }
+    height: 400px; }
   #pcMadrid {
     grid-area: madrid; }
   #pcLondres {
@@ -545,27 +606,38 @@ form {
     grid-area: paris; }
   .tituloSeccionPodcast {
     grid-area: titulo;
-    font-size: 40px; }
+    font-size: 40px;
+    background-color: #FFF;
+    padding-top: 25px;
+    padding-bottom: 2cm;
+    width: 100%; }
   /* -------------------------SECCION TRABAJOS------------------------------------ */
   .imgCarrousel {
-    max-width: 80%;
-    height: auto; }
+    max-width: 60%;
+    height: 300px; }
+  .tituloTrabajos {
+    text-align: center;
+    font-size: 40px;
+    background-color: #FFF;
+    padding-top: 25px;
+    padding-bottom: 25px; }
   /* ---------------------------////SECCION CONTACTO//// -------------------------------------- */
   #fotoMadrid {
     width: 90%;
     padding-left: 120px; }
   /* -----------------------------------///////BLOG///////--------------------------------------------- */
-  #sectionBlogGrilla {
-    grid-template-rows: auto;
-    margin-bottom: 20px; }
-  .fotosDeNotasBlog {
-    height: 80%;
-    width: 300px;
-    margin-left: 40px; }
-  .padreEntrevistas {
+  .imagenBlogNota {
+    width: 25vw;
+    height: 35vh;
+    margin: 0 auto;
+    object-fit: cover; }
+  .conteinerBlog {
+    border: 1px black;
+    border-style: solid;
+    margin: 2% 2% 2% 2%;
+    border-radius: 2%;
+    display: flex;
     flex-direction: row; }
-  .tituloEntrevistaBlog {
-    font-size: 40px; }
   #iframeSpoty {
     margin-top: 100px; }
   /* -----------------------------------///////MULTIMEDIA///////--------------------------------------------- */
