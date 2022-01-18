@@ -65,6 +65,7 @@ h1{
     font-family: 'Bangers';
     -webkit-text-stroke: 2px black;
     color: #AEB8E3;
+    padding: 20px 0px 20px 0px;
 }
 /* Seccion entrevistas */
 .contenedorDeContenedor{
@@ -156,7 +157,7 @@ h1{
     width: 0;
     background: white;
     border-left: 1px solid #000;
-    animation: escribirUno 5s steps(9) infinite alternate;
+    animation: escribirUno 5s steps(8) infinite alternate;
 
 }
 @keyframes escribirUno {
